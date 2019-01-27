@@ -1,0 +1,11 @@
+{%  extends 'base.html.twig' %}
+{% block body %}
+<h1>
+    Page accueil
+</h1>
+    {% for video in videos %}
+        <h1>{{ video.titre }}</h1>
+        {{ video.creation }}
+        <p>{{ video.description }}</p>
+    {% endfor %}
+{% endblock %}
